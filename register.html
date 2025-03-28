@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0532d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            color: #f0532d;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #f0532d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff6f47;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .options a {
+            text-decoration: none;
+            color: #f0532d;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .social-buttons button {
+            width: 48%;
+            background: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:white;">Shopee</h1>
+    <p style="color:white;">The leading online shopping platform in Southeast Asia and Taiwan</p>
+    <div class="container">
+        <h2>Log In</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Phone number / Username / Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">LOG IN</button>
+        </form>
+        <div class="options">
+            <a href="#">Forgot Password</a>
+            <a href="#">Log In with Phone Number</a>
+        </div>
+        <div class="social-buttons">
+            <button>Facebook</button>
+            <button>Google</button>
+        </div>
+        <p>New to Shopee? <a href="register.html">Sign Up</a></p>
+    </div>
+</body>
+</html>
